@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section{
+    @apply w-full h-screen;
+}
+
+.section_img{
+    @apply w-full h-full;
+}
+
+.navbar{
+    @apply flex items-center justify-between w-full absolute top-0 z-10 h-[5.4rem] p-[3.2rem];
+}
+
+.nav_link{
+    @apply text-2xl font-semibold mx-[0.8rem] px-[0.8rem]
+    py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-300 cursor-pointer text-[#AD8C73] active:bg-[#181b21] active:bg-opacity-10;
+}
+
+.ext{
+    @apply h-9 inline m-5;
+}
+
+.intro{
+    @apply text-center absolute top-[20%] left-[23%];
+}
+
+.vision{
+    @apply text-[4rem] text-[#393c41] font-semibold;
+}
+
+.mission{
+    @apply text-[#4c4d51] text-3xl m-5 font-semibold;
+}
+
+.btn{
+    @apply text-2xl text-white bg-[#AD8C73] font-medium my-8 py-[0.4rem] px-[2.4rem] rounded-[0.8rem] w-[13.5rem] h-16 cursor-pointer animate-bounce;
+}
+
+.details{
+    @apply text-center;
+}
+
+.new_collection{
+    @apply flex items-center justify-between ;
+}
+
+.arrival_img{
+    @apply h-[300px] w-[300px] inline-block m-20;
+}
+
+.collection_img{
+    @apply h-[400px] rounded-[3.2rem] w-[350px];
+}
+
+.new_arrival{
+    @apply flex items-center justify-between m-20;
+}
+
+.about{
+    @apply flex items-center;
+}
+
+.about_img{
+    @apply h-[449px] w-[450px] inline m-20 outline-none;
+}
+
+.about_us{
+    @apply  text-4xl w-[858px] h-[400px] font-extralight leading-[4rem] m-2;
+}
+
+.footer{
+    @apply w-[1,512px] h-[350px] bg-[#AD8C73];
+}
+
+.footer_img{
+    @apply h-24 absolute left-[150px] m-32;
+}
+
+.socials{
+    @apply absolute left-[20px] m-80;
+}
+
+.socials_img{
+    @apply inline-block h-11 m-3;
+}
+
+.services{
+    @apply absolute left-[450px] m-36 cursor-pointer;
+}
+
+.Our_products{
+    @apply absolute left-[700px] m-36 cursor-pointer;
+}
+
+.resources{
+    @apply absolute left-[980px] m-36 cursor-pointer;
+}
+
+.copyright{
+    @apply absolute left-[250px] m-[320px] cursor-pointer;
+}
